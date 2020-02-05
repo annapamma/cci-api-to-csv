@@ -8,8 +8,12 @@ import functions as f
 
 app = Flask(__name__)
 
-
 # circle-token from query-params
+
+
+@app.route('/')
+def hello():
+    return 'hello!'
 
 
 @app.route('/api/v2/insights/<vcs>/<org>/<project>/workflows')
