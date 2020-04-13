@@ -43,6 +43,13 @@ def insights_workflows(project_slug, circle_token):
     return workflows_dataframe
 
 
+def insights_jobs(project_slug, circle_token, workflow_name, job_name):
+    jobs_endpoint = f"https://circleci.com/api/v2/insights/{project_slug}/workflows/{workflow_name}/jobs/{job_name}"
+
+    jobs = make_request(jobs_endpoint, circle_token)['items']
+
+    jobs_dataframe = pd.DataFrame.from_records(jobs)
+    return jobs_dataframe
 
 
 
