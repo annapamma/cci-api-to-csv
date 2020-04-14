@@ -18,7 +18,7 @@ circleci.com/insights/{project-slug}/workflows/{workflow-name}/jobs/{job-name}?c
 Replace "circleci.com" with "api-to-csv.herokuapp.com"
 ie:
 ```
-api-to-csv.herokuapp.co/insights/{project-slug}/workflows/{workflow-name}/jobs/{job-name}
+api-to-csv.herokuapp.com/insights/{project-slug}/workflows/{workflow-name}/jobs/{job-name}
 ```
 
 ## Notes
