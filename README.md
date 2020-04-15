@@ -7,18 +7,18 @@ This is a workaround for customers to hit a CircleCI API endpoint and receive a 
 
 Get summary metrics for a project's workflows
 ```
-circleci.com/api/v2/insights/{project-slug}/workflows?circle-token={CIRCLETOKEN}
+http://circleci.com/api/v2/insights/{project-slug}/workflows?circle-token={CIRCLETOKEN}
 ```
 Get recent runs of a workflow job
 ```
-circleci.com/insights/{project-slug}/workflows/{workflow-name}/jobs/{job-name}?circle-token={CIRCLETOKEN}
+http://circleci.com/insights/{project-slug}/workflows/{workflow-name}/jobs/{job-name}?circle-token={CIRCLETOKEN}
 ```
 ## To use
 
 Replace "circleci.com" with "api-to-csv.herokuapp.com"
 ie:
 ```
-api-to-csv.herokuapp.com/insights/{project-slug}/workflows/{workflow-name}/jobs/{job-name}
+http://api-to-csv.herokuapp.com/insights/{project-slug}/workflows/{workflow-name}/jobs/{job-name}
 ```
 
 ## Notes
